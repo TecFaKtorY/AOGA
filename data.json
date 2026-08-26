@@ -1,0 +1,149 @@
+{
+  "site": {
+    "name": "Apostle Gabriel Olu Akintan",
+    "title": "Apostle Gabriel Olu Akintan — Grace Assembly Ministries",
+    "ministry": "Grace Assembly Ministries",
+    "tagline": "To the end of the world",
+    "location": "Lagos, Nigeria",
+    "whatsapp": "2348000000000",
+    "displayPhone": "+234 800 000 0000",
+    "email": "info@graceassemblyministries.org",
+    "youtube": "https://youtube.com/@apostlegabriel",
+    "facebook": "https://facebook.com/graceassemblyministries",
+    "instagram": "https://instagram.com/graceassemblyministries",
+    "x": "https://x.com/apostlegabriel",
+    "footer": "© 2026 Grace Assembly Ministries. All rights reserved.",
+    "ogImage": "https://yourdomain.com/assets/og-default.jpg"
+  },
+  "hero": {
+    "title": "To the end of the world",
+    "subtitle": "Apostle Gabriel Olu Akintan is a man called and ordained to preach the gospel and bring men to Christ",
+    "verseText": "Go therefore and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, and teaching them to obey everything that I have commanded you. And remember, I am with you always, to the end of the age.",
+    "verseRef": "Matthew 28:19-20",
+    "ctaText": "Watch Messages",
+    "ctaLink": "#messages"
+  },
+  "aboutPreview": "Apostle Gabriel Olu Akintan is the President and Founder of Grace Assembly Ministries in Lagos, Nigeria. He is an Apostle and Teacher of the Word whose ministry is characterised by notable and creative miracles, and a deep commitment to raising a generation of kingdom-minded believers.",
+  "aboutSections": [
+    {
+      "heading": "Early Life & Call",
+      "body": "Apostle Gabriel Olu Akintan was born and raised in Lagos, Nigeria, where he experienced a profound encounter with the Lord at a young age. Called from his mother's womb, he began ministering as a teenager and has never looked back."
+    },
+    {
+      "heading": "Education",
+      "body": "He holds a Bachelor's degree in Theology from the West Africa Theological Seminary and a Master's in Biblical Studies from the University of Lagos. He is also a certified leadership coach and a Fellow of the International Institute of Christian Leaders."
+    },
+    {
+      "heading": "Ordination",
+      "body": "He was ordained into the ministry in 2008 by Archbishop Amos Akintan and later consecrated as an Apostle in 2015. His apostolic cover spans across Africa, Europe, and North America."
+    },
+    {
+      "heading": "Marriage & Family",
+      "body": "Apostle Gabriel is happily married to Pastor Grace Akintan, and they are blessed with three children. Together they oversee the Grace Assembly Ministries network which includes over 12 churches across Nigeria."
+    }
+  ],
+  "messages": [
+    { "id": 1, "title": "The Power of Faith", "youtubeId": "dQw4w9WgXcQ", "date": "2026-01-15" },
+    { "id": 2, "title": "Walking in Grace", "youtubeId": "dQw4w9WgXcQ", "date": "2026-02-02" },
+    { "id": 3, "title": "Kingdom Authority", "youtubeId": "dQw4w9WgXcQ", "date": "2026-03-10" },
+    { "id": 4, "title": "The Spirit of Prayer", "youtubeId": "dQw4w9WgXcQ", "date": "2026-04-05" },
+    { "id": 5, "title": "Covenant Relationships", "youtubeId": "dQw4w9WgXcQ", "date": "2026-05-20" },
+    { "id": 6, "title": "Destiny & Purpose", "youtubeId": "dQw4w9WgXcQ", "date": "2026-06-14" }
+  ],
+  "books": [
+    {
+      "id": 1,
+      "title": "The Grace Revolution",
+      "subtitle": "Understanding the Unmerited Favor of God",
+      "description": "Apostle Gabriel unpacks the profound truth of God's grace and how it transforms every believer's walk. This book will shift your perspective on salvation, identity, and purpose.",
+      "image": "https://placehold.co/400x600/10B981/FFFFFF?text=The+Grace+Revolution",
+      "pdf": "",
+      "amazon": "https://amazon.com/dp/example",
+      "year": "2025"
+    },
+    {
+      "id": 2,
+      "title": "Prayers That Move Mountains",
+      "subtitle": "A 40-Day Devotional on Prayer",
+      "description": "A 40-day journey into the depths of prayer. Each day includes scripture, meditation, and prayer points that will ignite your prayer life.",
+      "image": "https://placehold.co/400x600/3B82F6/FFFFFF?text=Prayers+That+Move",
+      "pdf": "",
+      "amazon": "https://amazon.com/dp/example2",
+      "year": "2024"
+    }
+  ],
+  "verses": [
+    {
+      "id": 1,
+      "text": "Fear not, for I am with you; be not dismayed, for I am your God; I will strengthen you, I will help you, I will uphold you with my righteous right hand.",
+      "ref": "Isaiah 41:10",
+      "category": "faith",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "text": "Trust in the Lord with all your heart, and do not lean on your own understanding. In all your ways acknowledge him, and he will make straight your paths.",
+      "ref": "Proverbs 3:5-6",
+      "category": "wisdom",
+      "featured": false
+    },
+    {
+      "id": 3,
+      "text": "I can do all things through him who strengthens me.",
+      "ref": "Philippians 4:13",
+      "category": "strength",
+      "featured": false
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "title": "Annual Grace Conference 2026",
+      "date": "2026-12-10",
+      "endDate": "2026-12-13",
+      "time": "9:00 AM",
+      "location": "Grace Assembly HQ, Lagos",
+      "description": "Four days of worship, teaching, and supernatural encounters. Theme: The Year of Open Doors.",
+      "registrationLink": "https://graceassembly.org/register"
+    },
+    {
+      "id": 2,
+      "title": "Pastors' Roundtable",
+      "date": "2026-09-15",
+      "endDate": "",
+      "time": "10:00 AM",
+      "location": "Zoom / Online",
+      "description": "Monthly gathering for pastors and ministry leaders. Join Apostle Gabriel for strategy, prayer, and mentorship.",
+      "registrationLink": ""
+    }
+  ],
+  "uploads": [
+    {
+      "id": 1,
+      "name": "2026 Ministry Calendar",
+      "type": "pdf",
+      "url": "",
+      "size": "2.4 MB",
+      "category": "resource",
+      "description": "Full calendar of events for the year"
+    },
+    {
+      "id": 2,
+      "name": "Salvation Prayer Card",
+      "type": "image",
+      "url": "https://placehold.co/800x1000/065F46/FFFFFF?text=Salvation+Card",
+      "size": "1.1 MB",
+      "category": "evangelism",
+      "description": "Printable prayer card for outreach"
+    }
+  ],
+  "contact": {
+    "heading": "Get in Touch",
+    "subtext": "Reach out via WhatsApp messages only"
+  },
+  "seo": {
+    "description": "Apostle Gabriel Olu Akintan — Grace Assembly Ministries. Called to the end of the world. Watch sermons, read books, and connect with the ministry.",
+    "keywords": "Apostle Gabriel Olu Akintan, Grace Assembly Ministries, Lagos Nigeria, gospel preacher, Christian ministry, sermons, Bible teaching",
+    "googleAnalytics": ""
+  }
+}
