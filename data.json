@@ -13,7 +13,7 @@
     "instagram": "https://instagram.com/graceassemblyministries",
     "x": "https://x.com/apostlegabriel",
     "footer": "© 2026 Grace Assembly Ministries. All rights reserved.",
-    "ogImage": "https://yourdomain.com/assets/og-default.jpg"
+    "ogImage": "https://placehold.co/1200x630/065F46/FFFFFF?text=Grace+Assembly"
   },
   "hero": {
     "title": "To the end of the world",
@@ -21,9 +21,13 @@
     "verseText": "Go therefore and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, and teaching them to obey everything that I have commanded you. And remember, I am with you always, to the end of the age.",
     "verseRef": "Matthew 28:19-20",
     "ctaText": "Watch Messages",
-    "ctaLink": "#messages"
+    "ctaLink": "#messages",
+    "image": "https://placehold.co/400x500/10B981/FFFFFF?text=Apostle+Gabriel",
+    "imageAlt": "Apostle Gabriel Olu Akintan"
   },
   "aboutPreview": "Apostle Gabriel Olu Akintan is the President and Founder of Grace Assembly Ministries in Lagos, Nigeria. He is an Apostle and Teacher of the Word whose ministry is characterised by notable and creative miracles, and a deep commitment to raising a generation of kingdom-minded believers.",
+  "aboutImage": "https://placehold.co/600x700/065F46/FFFFFF?text=Apostle+Gabriel",
+  "aboutImageAlt": "Apostle Gabriel Olu Akintan — Grace Assembly Ministries",
   "aboutSections": [
     {
       "heading": "Early Life & Call",
@@ -55,9 +59,8 @@
       "id": 1,
       "title": "The Grace Revolution",
       "subtitle": "Understanding the Unmerited Favor of God",
-      "description": "Apostle Gabriel unpacks the profound truth of God's grace and how it transforms every believer's walk. This book will shift your perspective on salvation, identity, and purpose.",
+      "description": "Apostle Gabriel unpacks the profound truth of God's grace and how it transforms every believer's walk.",
       "image": "https://placehold.co/400x600/10B981/FFFFFF?text=The+Grace+Revolution",
-      "pdf": "",
       "amazon": "https://amazon.com/dp/example",
       "year": "2025"
     },
@@ -65,52 +68,47 @@
       "id": 2,
       "title": "Prayers That Move Mountains",
       "subtitle": "A 40-Day Devotional on Prayer",
-      "description": "A 40-day journey into the depths of prayer. Each day includes scripture, meditation, and prayer points that will ignite your prayer life.",
+      "description": "A 40-day journey into the depths of prayer. Each day includes scripture, meditation, and prayer points.",
       "image": "https://placehold.co/400x600/3B82F6/FFFFFF?text=Prayers+That+Move",
-      "pdf": "",
       "amazon": "https://amazon.com/dp/example2",
       "year": "2024"
     }
   ],
   "verses": [
-    {
-      "id": 1,
-      "text": "Fear not, for I am with you; be not dismayed, for I am your God; I will strengthen you, I will help you, I will uphold you with my righteous right hand.",
-      "ref": "Isaiah 41:10",
-      "category": "faith",
-      "featured": true
-    },
-    {
-      "id": 2,
-      "text": "Trust in the Lord with all your heart, and do not lean on your own understanding. In all your ways acknowledge him, and he will make straight your paths.",
-      "ref": "Proverbs 3:5-6",
-      "category": "wisdom",
-      "featured": false
-    },
-    {
-      "id": 3,
-      "text": "I can do all things through him who strengthens me.",
-      "ref": "Philippians 4:13",
-      "category": "strength",
-      "featured": false
-    }
+    { "id": 1, "text": "Fear not, for I am with you; be not dismayed...", "ref": "Isaiah 41:10", "category": "faith", "featured": true },
+    { "id": 2, "text": "Trust in the Lord with all your heart...", "ref": "Proverbs 3:5-6", "category": "wisdom", "featured": false },
+    { "id": 3, "text": "I can do all things through him who strengthens me.", "ref": "Philippians 4:13", "category": "strength", "featured": false }
   ],
   "events": [
     {
-      "id": 1,
-      "title": "Annual Grace Conference 2026",
-      "date": "2026-12-10",
-      "endDate": "2026-12-13",
-      "time": "9:00 AM",
-      "location": "Grace Assembly HQ, Lagos",
-      "description": "Four days of worship, teaching, and supernatural encounters. Theme: The Year of Open Doors.",
+      "id": 1, "title": "Annual Grace Conference 2026",
+      "date": "2026-12-10", "endDate": "2026-12-13",
+      "time": "9:00 AM", "location": "Grace Assembly HQ, Lagos",
+      "description": "Four days of worship, teaching, and supernatural encounters.",
       "registrationLink": "https://graceassembly.org/register"
     },
     {
-      "id": 2,
-      "title": "Pastors' Roundtable",
-      "date": "2026-09-15",
-      "endDate": "",
+      "id": 2, "title": "Pastors' Roundtable",
+      "date": "2026-09-15", "endDate": "",
+      "time": "10:00 AM", "location": "Zoom / Online",
+      "description": "Monthly gathering for pastors and ministry leaders.",
+      "registrationLink": ""
+    }
+  ],
+  "uploads": [
+    { "id": 1, "name": "2026 Ministry Calendar", "type": "pdf", "url": "", "size": "2.4 MB", "category": "resource", "description": "Full calendar of events for the year" },
+    { "id": 2, "name": "Salvation Prayer Card", "type": "image", "url": "https://placehold.co/800x1000/065F46/FFFFFF?text=Salvation+Card", "size": "1.1 MB", "category": "evangelism", "description": "Printable prayer card for outreach" }
+  ],
+  "contact": {
+    "heading": "Get in Touch",
+    "subtext": "Reach out via WhatsApp messages only"
+  },
+  "seo": {
+    "description": "Apostle Gabriel Olu Akintan — Grace Assembly Ministries. Called to the end of the world. Watch sermons, read books, and connect with the ministry.",
+    "keywords": "Apostle Gabriel Olu Akintan, Grace Assembly Ministries, Lagos Nigeria, gospel preacher, Christian ministry, sermons, Bible teaching",
+    "googleAnalytics": ""
+  }
+}      "endDate": "",
       "time": "10:00 AM",
       "location": "Zoom / Online",
       "description": "Monthly gathering for pastors and ministry leaders. Join Apostle Gabriel for strategy, prayer, and mentorship.",
