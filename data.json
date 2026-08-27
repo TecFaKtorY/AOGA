@@ -4,16 +4,16 @@
     "title": "Apostle Gabriel Olu Akintan — HOUSE OF THE LORD EVANGELICAL AND PRAYER INTERNATIONAL CHURCH (HOLEPIC)",
     "ministry": "HOUSE OF THE LORD EVANGELICAL AND PRAYER INTERNATIONAL CHURCH (HOLEPIC)",
     "tagline": "To the end of the world",
-    "location": "MR MATHEW LANE, OPPOSITE ALFRED YESIN STREET, FIRST RED GATE AFTER GABRIELA SCHOOL, NEW LAYOUT EGBOKODO-ITSEKIRI, WARRI. DELTA STATE, NIGERIA",
-    "whatsapp": "+234 805 809 8883",
-    "displayPhone": "+234 800 000 0000",
-    "email": "info@graceassemblyministries.org",
+    "location": "MR MATHEW LANE, OPPOSITE ALFRED YESIN STREET, FIRST RED GATE AFTER GABRIELA SCHOOL, NEW LAYOUT EGBOKODO-ITSEKIRI, WARRI, DELTA STATE, NIGERIA",
+    "whatsapp": "2348058098883",
+    "displayPhone": "+234 805 809 8883",
+    "email": "",
     "youtube": "https://youtube.com/@apostlegabriel",
     "facebook": "https://facebook.com/graceassemblyministries",
     "instagram": "https://instagram.com/graceassemblyministries",
     "x": "https://x.com/apostlegabriel",
-    "footer": "© 2026 Grace Assembly Ministries. All rights reserved.",
-    "ogImage": "https://placehold.co/1200x630/065F46/FFFFFF?text=Grace+Assembly"
+    "footer": "© 2026 HOUSE OF THE LORD EVANGELICAL AND PRAYER INTERNATIONAL CHURCH (HOLEPIC). All rights reserved.",
+    "ogImage": "https://placehold.co/1200x630/065F46/FFFFFF?text=HOLEPIC"
   },
 
   "hero": {
@@ -27,27 +27,27 @@
     "imageAlt": "Apostle Gabriel Olu Akintan"
   },
 
-  "aboutPreview": "Apostle Gabriel Olu Akintan is the President and Founder of Grace Assembly Ministries in Lagos, Nigeria. He is an Apostle and Teacher of the Word whose ministry is characterised by notable and creative miracles, and a deep commitment to raising a generation of kingdom-minded believers.",
+  "aboutPreview": "Apostle Gabriel Olu Akintan is the President and Founder of the HOUSE OF THE LORD EVANGELICAL AND PRAYER INTERNATIONAL CHURCH (HOLEPIC) in Warri, Delta State, Nigeria. He is an Apostle and Teacher of the Word with a deep commitment to preaching the gospel, bringing men to Christ, and raising kingdom-minded believers.",
 
   "aboutImage": "https://placehold.co/600x700/065F46/FFFFFF?text=Apostle+Gabriel",
-  "aboutImageAlt": "Apostle Gabriel Olu Akintan — Grace Assembly Ministries",
+  "aboutImageAlt": "Apostle Gabriel Olu Akintan — HOLEPIC",
 
   "aboutSections": [
     {
       "heading": "Early Life & Call",
-      "body": "Apostle Gabriel Olu Akintan was born and raised in Lagos, Nigeria, where he experienced a profound encounter with the Lord at a young age. Called from his mother's womb, he began ministering as a teenager and has never looked back."
+      "body": "Apostle Gabriel Olu Akintan was born and raised in Nigeria, where he experienced a profound encounter with the Lord at a young age. Called to serve God and preach the gospel, he began ministering as a young man and has remained committed to the work of the Kingdom."
     },
     {
-      "heading": "Education",
-      "body": "He holds a Bachelor's degree in Theology from the West Africa Theological Seminary and a Master's in Biblical Studies from the University of Lagos. He is also a certified leadership coach and a Fellow of the International Institute of Christian Leaders."
+      "heading": "Ministry",
+      "body": "Apostle Gabriel Olu Akintan is the President and Founder of the HOUSE OF THE LORD EVANGELICAL AND PRAYER INTERNATIONAL CHURCH (HOLEPIC). His ministry is focused on preaching the gospel, teaching the Word of God, prayer, evangelism, and leading people into a deeper relationship with Christ."
     },
     {
-      "heading": "Ordination",
-      "body": "He was ordained into the ministry in 2008 by Archbishop Amos Akintan and later consecrated as an Apostle in 2015. His apostolic cover spans across Africa, Europe, and North America."
+      "heading": "Apostolic Calling",
+      "body": "As an Apostle and Teacher of the Word, Apostle Gabriel Olu Akintan carries a strong passion for reaching people with the gospel and equipping believers for effective Christian living and service."
     },
     {
-      "heading": "Marriage & Family",
-      "body": "Apostle Gabriel is happily married to Pastor Grace Akintan, and they are blessed with three children. Together they oversee the Grace Assembly Ministries network which includes over 12 churches across Nigeria."
+      "heading": "Vision & Mission",
+      "body": "The vision of the ministry is to take the gospel to the end of the world, win souls for Christ, establish believers in the faith, and raise a generation of people who are committed to the purposes of God."
     }
   ],
 
@@ -97,7 +97,7 @@
       "subtitle": "Understanding the Unmerited Favor of God",
       "description": "Apostle Gabriel unpacks the profound truth of God's grace and how it transforms every believer's walk.",
       "image": "https://placehold.co/400x600/10B981/FFFFFF?text=The+Grace+Revolution",
-      "amazon": "https://amazon.com/dp/example",
+      "amazon": "",
       "year": "2025"
     },
     {
@@ -106,7 +106,7 @@
       "subtitle": "A 40-Day Devotional on Prayer",
       "description": "A 40-day journey into the depths of prayer. Each day includes scripture, meditation, and prayer points.",
       "image": "https://placehold.co/400x600/3B82F6/FFFFFF?text=Prayers+That+Move",
-      "amazon": "https://amazon.com/dp/example2",
+      "amazon": "",
       "year": "2024"
     }
   ],
@@ -138,13 +138,13 @@
   "events": [
     {
       "id": 1,
-      "title": "Annual Grace Conference 2026",
+      "title": "Annual HOLEPIC Conference 2026",
       "date": "2026-12-10",
       "endDate": "2026-12-13",
       "time": "9:00 AM",
-      "location": "Grace Assembly HQ, Lagos",
-      "description": "Four days of worship, teaching, and supernatural encounters.",
-      "registrationLink": "https://graceassembly.org/register"
+      "location": "HOLEPIC Headquarters, Warri, Delta State",
+      "description": "Four days of worship, teaching, prayer, fellowship, and spiritual encounters.",
+      "registrationLink": ""
     },
     {
       "id": 2,
@@ -153,7 +153,7 @@
       "endDate": "",
       "time": "10:00 AM",
       "location": "Zoom / Online",
-      "description": "Monthly gathering for pastors and ministry leaders. Join Apostle Gabriel for strategy, prayer, and mentorship.",
+      "description": "A gathering for pastors and ministry leaders for strategy, prayer, fellowship, and mentorship.",
       "registrationLink": ""
     }
   ],
@@ -166,7 +166,7 @@
       "url": "",
       "size": "2.4 MB",
       "category": "resource",
-      "description": "Full calendar of events for the year"
+      "description": "Full calendar of ministry events for the year."
     },
     {
       "id": 2,
@@ -175,52 +175,18 @@
       "url": "https://placehold.co/800x1000/065F46/FFFFFF?text=Salvation+Card",
       "size": "1.1 MB",
       "category": "evangelism",
-      "description": "Printable prayer card for outreach"
+      "description": "Printable prayer card for evangelism and outreach."
     }
   ],
 
   "contact": {
     "heading": "Get in Touch",
-    "subtext": "Reach out via WhatsApp messages only"
+    "subtext": "Reach out via WhatsApp messages only."
   },
 
   "seo": {
-    "description": "Apostle Gabriel Olu Akintan — Grace Assembly Ministries. Called to the end of the world. Watch sermons, read books, and connect with the ministry.",
-    "keywords": "Apostle Gabriel Olu Akintan, Grace Assembly Ministries, Lagos Nigeria, gospel preacher, Christian ministry, sermons, Bible teaching",
-    "googleAnalytics": ""
-  }
-}      "location": "Zoom / Online",
-      "description": "Monthly gathering for pastors and ministry leaders. Join Apostle Gabriel for strategy, prayer, and mentorship.",
-      "registrationLink": ""
-    }
-  ],
-  "uploads": [
-    {
-      "id": 1,
-      "name": "2026 Ministry Calendar",
-      "type": "pdf",
-      "url": "",
-      "size": "2.4 MB",
-      "category": "resource",
-      "description": "Full calendar of events for the year"
-    },
-    {
-      "id": 2,
-      "name": "Salvation Prayer Card",
-      "type": "image",
-      "url": "https://placehold.co/800x1000/065F46/FFFFFF?text=Salvation+Card",
-      "size": "1.1 MB",
-      "category": "evangelism",
-      "description": "Printable prayer card for outreach"
-    }
-  ],
-  "contact": {
-    "heading": "Get in Touch",
-    "subtext": "Reach out via WhatsApp messages only"
-  },
-  "seo": {
-    "description": "Apostle Gabriel Olu Akintan — Grace Assembly Ministries. Called to the end of the world. Watch sermons, read books, and connect with the ministry.",
-    "keywords": "Apostle Gabriel Olu Akintan, Grace Assembly Ministries, Lagos Nigeria, gospel preacher, Christian ministry, sermons, Bible teaching",
+    "description": "Apostle Gabriel Olu Akintan — HOUSE OF THE LORD EVANGELICAL AND PRAYER INTERNATIONAL CHURCH (HOLEPIC), Warri, Delta State, Nigeria. Discover the ministry, watch messages, read resources, and connect with the ministry.",
+    "keywords": "Apostle Gabriel Olu Akintan, HOLEPIC, House of the Lord Evangelical and Prayer International Church, Warri, Delta State, Nigeria, Christian ministry, Apostle Gabriel, gospel preacher, sermons, Bible teaching, prayer",
     "googleAnalytics": ""
   }
 }
