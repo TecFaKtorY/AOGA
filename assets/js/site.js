@@ -35,6 +35,22 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 });
 
+// ── Hero Portrait ──
+  const heroImg = document.getElementById('heroPortraitImg');
+  if (heroImg && data.hero?.image) {
+    heroImg.src = data.hero.image;
+    heroImg.alt = data.hero.imageAlt || 'Apostle Gabriel Olu Akintan';
+    document.getElementById('heroPortrait')?.classList.add('reveal', 'reveal-delay-1');
+  }
+
+  // ── About Portrait ──
+  const aboutImg = document.getElementById('aboutPortraitImg');
+  if (aboutImg && data.aboutImage) {
+    aboutImg.src = data.aboutImage;
+    aboutImg.alt = data.aboutImageAlt || 'Apostle Gabriel Olu Akintan';
+    document.getElementById('aboutPortrait')?.classList.add('reveal');
+  }
+
 // ═══ THEME TOGGLE ═══
 function initThemeToggle() {
   const btn = document.getElementById('themeToggle');
