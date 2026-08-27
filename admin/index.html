@@ -537,6 +537,14 @@
         <div class="form-row"><label>Subtitle</label><textarea id="ad-heroSubtitle" rows="2"></textarea></div>
         <div class="form-row"><label>Verse Text</label><textarea id="ad-verseText" rows="3"></textarea></div>
         <div class="form-row"><label>Verse Reference</label><input type="text" id="ad-verseRef" /></div>
+        <div class="form-row">
+          <label>Portrait Image URL</label>
+          <input type="url" id="ad-heroImage" placeholder="https://..." />
+        </div>
+        <div class="form-row">
+          <label>Portrait Alt Text</label>
+          <input type="text" id="ad-heroImageAlt" placeholder="Apostle Gabriel Olu Akintan" />
+        </div>
         <div class="form-row-inline">
           <div class="form-row"><label>CTA Text</label><input type="text" id="ad-ctaText" /></div>
           <div class="form-row"><label>CTA Link</label><input type="text" id="ad-ctaLink" /></div>
@@ -553,6 +561,17 @@
       <div class="admin-card">
         <h3>📋 About Sections <span class="badge" id="aboutCount">0</span></h3>
         <div id="aboutAdminList" class="items-admin-list"></div>
+        <div class="admin-card">
+        <h3>🖼️ About Portrait</h3>
+        <div class="form-row">
+          <label>Portrait Image URL</label>
+          <input type="url" id="ad-aboutImage" placeholder="https://..." />
+        </div>
+        <div class="form-row">
+          <label>Portrait Alt Text</label>
+          <input type="text" id="ad-aboutImageAlt" placeholder="Apostle Gabriel Olu Akintan" />
+        </div>
+        </div>
         <div class="add-item-bar">
           <input type="text" id="newAboutHeading" placeholder="Heading" />
           <input type="text" id="newAboutBody" placeholder="Body text" />
