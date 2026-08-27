@@ -2,7 +2,7 @@
    Site Renderer v2 — Fetches data.json & builds EVERYTHING
    ═══════════════════════════════════════ */
 
-const SITE_DATA_URL = '/data.json';
+const SITE_DATA_URL = '../data.json';
 
 // ── DOM shortcuts ──
 const $ = (id) => document.getElementById(id);
