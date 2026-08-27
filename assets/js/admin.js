@@ -114,8 +114,17 @@ function populateForms() {
   $('ad-ctaText').value = data.hero?.ctaText || '';
   $('ad-ctaLink').value = data.hero?.ctaLink || '';
 
+   // Hero image
+  $('ad-heroImage').value = data.hero?.image || '';
+  $('ad-heroImageAlt').value = data.hero?.imageAlt || '';
+
+  // About image
+  $('ad-aboutImage').value = data.aboutImage || '';
+  $('ad-aboutImageAlt').value = data.aboutImageAlt || '';
+
   // About
   $('ad-aboutPreview').value = data.aboutPreview || '';
+   
   renderAboutList();
 
   // Messages
@@ -436,7 +445,17 @@ function gatherFormData() {
     instagram: $('ad-instagram').value,
     x: $('ad-x').value,
     footer: $('ad-footer').value || `© ${new Date().getFullYear()} ${$('ad-name').value || 'Grace Assembly Ministries'}. All rights reserved.`,
-    ogImage: $('ad-ogImage').value
+    ogImage: $('ad-ogImage').value,
+     hero: {
+      title: $('ad-heroTitle').value,
+      subtitle: $('ad-heroSubtitle').value,
+      verseText: $('ad-verseText').value,
+      verseRef: $('ad-verseRef').value,
+      ctaText: $('ad-ctaText').value || 'Watch Messages',
+      ctaLink: $('ad-ctaLink').value || '#messages',
+      image: $('ad-heroImage').value,
+      imageAlt: $('ad-heroImageAlt').value || 'Apostle Gabriel Olu Akintan'
+    }
   };
 
   return {
@@ -450,6 +469,9 @@ function gatherFormData() {
       ctaLink: $('ad-ctaLink').value || '#messages'
     },
     aboutPreview: $('ad-aboutPreview').value,
+     aboutPreview: $('ad-aboutPreview').value,
+    aboutImage: $('ad-aboutImage').value,
+    aboutImageAlt: $('ad-aboutImageAlt').value || 'Apostle Gabriel Olu Akintan',
     aboutSections: data.aboutSections || [],
     messages: data.messages || [],
     books: data.books || [],
