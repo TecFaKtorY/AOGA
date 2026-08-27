@@ -247,6 +247,174 @@ a { color: inherit; text-decoration: none; }
   border: 1px solid var(--hero-glass-border);
   box-shadow: var(--glass-shadow);
 }
+/* ═══ HERO PORTRAIT LAYOUT ═══ */
+.hero-layout {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  text-align: left;
+}
+
+.hero-left {
+  flex-shrink: 0;
+}
+
+.hero-right {
+  flex: 1;
+}
+
+.hero-right .hero-ministry {
+  margin-bottom: 1rem;
+}
+
+.hero-right .hero-title {
+  margin-bottom: 1.25rem;
+}
+
+.hero-right .hero-subtitle {
+  margin: 0 0 1.5rem 0;
+}
+
+.hero-right .hero-verse {
+  margin: 0 0 2rem 0;
+  text-align: left;
+}
+
+.hero-right .btn-primary {
+  justify-content: center;
+}
+
+/* ── Glass Portrait Frame ── */
+.glass-portrait {
+  position: relative;
+  width: 320px;
+  height: 380px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.glass-portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease, filter 0.6s ease;
+}
+
+.glass-portrait:hover img {
+  transform: scale(1.03);
+}
+
+.portrait-glow {
+  position: absolute;
+  top: -20%;
+  left: -20%;
+  width: 140%;
+  height: 140%;
+  background: radial-gradient(circle at 30% 30%, rgba(16, 185, 129, 0.15), transparent 60%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* ── About Portrait Layout ── */
+.about-layout {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+  margin-bottom: 2.5rem;
+}
+
+.about-image-col {
+  flex-shrink: 0;
+}
+
+.about-portrait-frame {
+  width: 280px;
+  height: 340px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.about-portrait-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.about-portrait-frame:hover img {
+  transform: scale(1.03);
+}
+
+.about-text-col {
+  flex: 1;
+}
+
+.about-text-col .about-preview {
+  margin-bottom: 0;
+}
+
+/* ── Responsive for portrait ── */
+@media (max-width: 900px) {
+  .hero-layout {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .hero-left {
+    order: -1;
+  }
+
+  .glass-portrait {
+    width: 220px;
+    height: 270px;
+    margin: 0 auto;
+  }
+
+  .hero-right .hero-verse {
+    text-align: center;
+  }
+
+  .hero-right .hero-subtitle {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-layout {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-portrait-frame {
+    width: 220px;
+    height: 270px;
+  }
+}
+
+@media (max-width: 480px) {
+  .glass-portrait {
+    width: 180px;
+    height: 220px;
+  }
+
+  .about-portrait-frame {
+    width: 180px;
+    height: 220px;
+  }
+}
 .verse-text { font-size: clamp(0.9rem, 1.3vw, 1.05rem); font-style: italic; line-height: 1.7; color: rgba(255,255,255,0.9); margin-bottom: 0.5rem; }
 .verse-ref { display: block; font-size: 0.85rem; font-weight: 600; color: var(--gold); font-style: normal; }
 
