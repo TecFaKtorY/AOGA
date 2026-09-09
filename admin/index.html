@@ -141,9 +141,7 @@
       to { opacity: 1; transform: translateY(0); }
     }
 
-    .panel-header {
-      margin-bottom: 1.5rem;
-    }
+    .panel-header { margin-bottom: 1.5rem; }
     .panel-header h2 { font-size: 1.35rem; font-weight: 700; }
     .panel-header p { color: #64748B; font-size: 0.85rem; margin-top: 0.25rem; }
 
@@ -205,12 +203,9 @@
     .form-row textarea { min-height: 70px; resize: vertical; }
     .form-row-inline { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
 
-    .admin-card .btn-primary {
-      font-size: 0.82rem;
-      padding: 0.55rem 1.4rem;
-    }
+    .admin-card .btn-primary { font-size: 0.82rem; padding: 0.55rem 1.4rem; }
 
-    /* ═══ Messages List (Admin) ═══ */
+    /* ═══ Items List (Admin) ═══ */
     .items-admin-list { margin: 1rem 0; }
     .item-admin {
       display: flex;
@@ -227,9 +222,7 @@
       font-size: 0.85rem; font-weight: 500;
       white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
     }
-    .item-admin .item-info .item-sub {
-      font-size: 0.72rem; color: #64748B;
-    }
+    .item-admin .item-info .item-sub { font-size: 0.72rem; color: #64748B; }
     .item-admin .btn-remove {
       background: transparent;
       border: none;
@@ -244,13 +237,8 @@
     }
     .item-admin .btn-remove:hover { background: rgba(239,68,68,0.1); }
 
-    .add-item-bar {
-      display: flex;
-      gap: 0.5rem;
-      margin-top: 0.75rem;
-    }
-    .add-item-bar input {
-      flex: 1;
+    .add-item-bar { display: flex; gap: 0.5rem; margin-top: 0.75rem; }
+    .add-item-bar input, .add-item-bar select {
       padding: 0.6rem 0.8rem;
       border-radius: 10px;
       border: 1px solid #334155;
@@ -353,9 +341,7 @@
       max-width: 400px;
       text-align: center;
     }
-    .admin-login-card .lock-icon {
-      font-size: 2.5rem; margin-bottom: 0.5rem;
-    }
+    .admin-login-card .lock-icon { font-size: 2.5rem; margin-bottom: 0.5rem; }
     .admin-login-card h2 { font-size: 1.3rem; font-weight: 700; margin-bottom: 0.25rem; }
     .admin-login-card p { color: #64748B; font-size: 0.85rem; margin-bottom: 1.5rem; }
     .admin-login-card .pin-input {
@@ -399,7 +385,6 @@
 
     .hidden { display: none !important; }
 
-    /* ── Upload list ── */
     .upload-thumb {
       width: 48px; height: 48px; border-radius: 8px;
       background: #0F172A;
@@ -408,11 +393,8 @@
       flex-shrink: 0;
     }
 
-    /* ── Responsive ── */
     @media (max-width: 768px) {
-      .admin-sidebar {
-        transform: translateX(-100%);
-      }
+      .admin-sidebar { transform: translateX(-100%); }
       .admin-sidebar.open { transform: translateX(0); }
       .admin-main { margin-left: 0; padding: 1rem 1rem 8rem; }
       .admin-action-bar { left: 0; padding: 0.75rem 1rem; flex-direction: column; }
@@ -420,7 +402,6 @@
       .form-row-inline { grid-template-columns: 1fr; }
       .add-item-bar { flex-wrap: wrap; }
       .add-item-bar input { min-width: 0; }
-      /* Mobile sidebar toggle button */
       .sidebar-toggle {
         display: flex !important;
         position: fixed; top: 0.75rem; left: 0.75rem;
@@ -485,6 +466,9 @@
       <button class="sidebar-nav-item" data-panel="verses">
         <span class="nav-icon">📖</span> Verses
       </button>
+      <button class="sidebar-nav-item" data-panel="sections">
+        <span class="nav-icon">🧩</span> Sections
+      </button>
       <button class="sidebar-nav-item" data-panel="events">
         <span class="nav-icon">🗓</span> Events
       </button>
@@ -492,7 +476,7 @@
         <span class="nav-icon">⬆</span> Uploads
       </button>
     </nav>
-    <div class="sidebar-footer">Grace Assembly Ministries</div>
+    <div class="sidebar-footer">HOLEPIC</div>
   </aside>
 
   <!-- ═══ MAIN CONTENT ═══ -->
@@ -504,6 +488,7 @@
       <div class="admin-card">
         <div class="form-row"><label>Ministry Name</label><input type="text" id="ad-name" /></div>
         <div class="form-row"><label>Browser Title</label><input type="text" id="ad-title" /></div>
+        <div class="form-row"><label>Navbar Logo Text (short)</label><input type="text" id="ad-logo" placeholder="e.g. HOLEPIC" /></div>
         <div class="form-row"><label>Tagline</label><input type="text" id="ad-tagline" /></div>
         <div class="form-row"><label>Location</label><input type="text" id="ad-location" /></div>
         <div class="form-row-inline">
@@ -559,9 +544,6 @@
         <div class="form-row"><label>Preview Text</label><textarea id="ad-aboutPreview" rows="3"></textarea></div>
       </div>
       <div class="admin-card">
-        <h3>📋 About Sections <span class="badge" id="aboutCount">0</span></h3>
-        <div id="aboutAdminList" class="items-admin-list"></div>
-        <div class="admin-card">
         <h3>🖼️ About Portrait</h3>
         <div class="form-row">
           <label>Portrait Image URL</label>
@@ -571,7 +553,10 @@
           <label>Portrait Alt Text</label>
           <input type="text" id="ad-aboutImageAlt" placeholder="Apostle Gabriel Olu Akintan" />
         </div>
-        </div>
+      </div>
+      <div class="admin-card">
+        <h3>📋 About Sections <span class="badge" id="aboutCount">0</span></h3>
+        <div id="aboutAdminList" class="items-admin-list"></div>
         <div class="add-item-bar">
           <input type="text" id="newAboutHeading" placeholder="Heading" />
           <input type="text" id="newAboutBody" placeholder="Body text" />
@@ -638,6 +623,49 @@
       </div>
     </div>
 
+    <!-- ── PANEL: SECTIONS (NEW) ── -->
+    <div class="panel" id="panel-sections">
+      <div class="panel-header"><h2>🧩 Custom Sections</h2><p>Add new content sections to the homepage</p></div>
+      <div class="admin-card">
+        <h3>🧩 Sections List <span class="badge" id="sectionCount">0</span></h3>
+        <div id="sectionsAdminList" class="items-admin-list"></div>
+        <div class="add-item-bar" style="flex-wrap:wrap;">
+          <input type="text" id="newSectionTitle" placeholder="Section title" style="flex:2;" />
+          <select id="newSectionPlacement" style="flex:1.2;">
+            <option value="afterHero">After Hero</option>
+            <option value="afterAbout">After About</option>
+            <option value="afterMessages">After Messages</option>
+            <option value="afterBooks">After Books</option>
+            <option value="afterVerses">After Verses</option>
+            <option value="afterEvents">After Events</option>
+            <option value="beforeContact">Before Contact</option>
+          </select>
+          <button class="btn-add" id="addSectionBtn">+ Add Section</button>
+        </div>
+        <div class="form-row" style="margin-top:0.5rem;">
+          <textarea id="newSectionBody" rows="3" placeholder="Section body text..."></textarea>
+        </div>
+        <div class="form-row">
+          <label>Optional Image URL</label>
+          <input type="url" id="newSectionImage" placeholder="https://... (leave blank for text-only)" />
+        </div>
+        <div class="form-row">
+          <label>Optional Button Text + Link</label>
+          <div class="form-row-inline">
+            <input type="text" id="newSectionBtnText" placeholder="Button text (optional)" />
+            <input type="text" id="newSectionBtnLink" placeholder="Button link (https:// or #messages)" />
+          </div>
+        </div>
+      </div>
+      <div class="admin-card">
+        <p style="color:#64748B;font-size:0.8rem;line-height:1.6;">
+          💡 Sections appear on the site in the order listed here, at the placement you chose.
+          Each section also gets a link in the navbar automatically. Remember to click
+          <strong>Publish Changes</strong> to save.
+        </p>
+      </div>
+    </div>
+
     <!-- ── PANEL: EVENTS ── -->
     <div class="panel" id="panel-events">
       <div class="panel-header"><h2>🗓 Events</h2><p>Upcoming ministry events</p></div>
@@ -653,7 +681,7 @@
           <div class="form-row"><label>End Date</label><input type="date" id="newEventEnd" /></div>
           <div class="form-row"><label>Time</label><input type="text" id="newEventTime" placeholder="e.g. 9:00 AM" /></div>
         </div>
-        <div class="form-row"><label>Location</label><input type="text" id="newEventLocation" placeholder="e.g. Grace Assembly HQ, Lagos" /></div>
+        <div class="form-row"><label>Location</label><input type="text" id="newEventLocation" placeholder="e.g. HOLEPIC HQ, Warri" /></div>
         <div class="form-row"><label>Description</label><textarea id="newEventDesc" rows="2"></textarea></div>
         <div class="form-row"><label>Registration Link</label><input type="url" id="newEventReg" placeholder="https://..." /></div>
       </div>
