@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════
-   Site Renderer v3
+   Site Renderer v4 — HOLEPIC
    Fetches data.json & builds EVERYTHING
    ═══════════════════════════════════════ */
 
@@ -159,7 +159,7 @@ function renderSEO() {
   const name = data.site?.name || '';
 
   const ministry =
-    data.site?.ministry || 'Grace Assembly Ministries';
+    data.site?.ministry || 'HOLEPIC';
 
   const desc =
     data.seo?.description ||
@@ -168,7 +168,7 @@ function renderSEO() {
 
   const img =
     data.site?.ogImage ||
-    'https://placehold.co/1200x630/065F46/FFFFFF?text=Grace+Assembly';
+    'https://placehold.co/1200x630/065F46/FFFFFF?text=HOLEPIC';
 
   setMeta(
     'seoTitle',
@@ -339,9 +339,7 @@ function renderAll() {
 
   if ($('navBrand')) {
     $('navBrand').textContent =
-      data.site?.ministry ||
-      data.site?.name ||
-      '';
+      data.site?.logo || 'HOLEPIC';
   }
 
   if ($('heroMinistry')) {
@@ -362,7 +360,7 @@ function renderAll() {
   document.title =
     data.site?.title ||
     data.site?.name ||
-    'Grace Assembly Ministries';
+    'HOLEPIC';
 
 
   // ═════════════════════════════════════
@@ -493,6 +491,13 @@ function renderAll() {
 
 
   // ═════════════════════════════════════
+  // CUSTOM SECTIONS (admin-managed)
+  // ═════════════════════════════════════
+
+  renderCustomSections();
+
+
+  // ═════════════════════════════════════
   // CONTACT
   // ═════════════════════════════════════
 
@@ -546,7 +551,7 @@ function renderAll() {
     $('footerText').textContent =
       data.site?.footer ||
       `© ${new Date().getFullYear()} ${
-        data.site?.ministry || ''
+        data.site?.ministry || 'HOLEPIC'
       }. All rights reserved.`;
   }
 
@@ -657,6 +662,115 @@ function renderAboutSections() {
     `;
 
     grid.appendChild(card);
+  });
+}
+
+
+// ═══════════════════════════════════════
+// CUSTOM SECTIONS (admin-managed)
+// ═══════════════════════════════════════
+
+const SECTION_ANCHORS = {
+  afterHero: 'hero',
+  afterAbout: 'about',
+  afterMessages: 'messages',
+  afterBooks: 'books',
+  afterVerses: 'verses',
+  afterEvents: 'events',
+  beforeContact: 'contact'
+};
+
+function slugify(text) {
+  return 'sec-' + String(text)
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+    .slice(0, 40) || 'sec-' + Math.random().toString(36).slice(2, 7);
+}
+
+function renderCustomSections() {
+
+  if (!Array.isArray(data.sections) ||
+      !data.sections.length) {
+
+    return;
+  }
+
+  const navLinks = $('navLinks');
+
+  data.sections.forEach((section) => {
+
+    if (!section.title) return;
+
+    const anchorId =
+      SECTION_ANCHORS[section.placement] || 'events';
+
+    const anchorEl =
+      document.getElementById(anchorId);
+
+    if (!anchorEl) return;
+
+    const secId = slugify(section.title);
+
+    // Build the section element
+    const sectionEl = document.createElement('section');
+    sectionEl.id = secId;
+    sectionEl.className = 'section';
+
+    sectionEl.innerHTML = `
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">HOLEPIC</span>
+          <h2 class="section-title">${escHtml(section.title)}</h2>
+          <div class="section-divider"><span></span></div>
+        </div>
+        ${
+          section.image
+            ? `<div class="section-image reveal" style="text-align:center;margin-bottom:1.5rem;">
+                 <img src="${escHtml(section.image)}" alt="${escHtml(section.title)}"
+                      loading="lazy"
+                      style="max-width:100%;border-radius:16px;" />
+               </div>`
+            : ''
+        }
+        ${
+          section.body
+            ? `<p class="reveal" style="max-width:800px;margin:0 auto 1.5rem;line-height:1.8;">
+                 ${escHtml(section.body)}
+               </p>`
+            : ''
+        }
+        ${
+          section.buttonText
+            ? `<div style="text-align:center;" class="reveal">
+                 <a href="${escHtml(section.buttonLink || '#')}"
+                    class="btn-primary" target="_blank" rel="noopener">
+                   <span>${escHtml(section.buttonText)}</span>
+                 </a>
+               </div>`
+            : ''
+        }
+      </div>
+    `;
+
+    // Insert AFTER the anchor (or BEFORE if beforeContact)
+    if (section.placement === 'beforeContact') {
+      anchorEl.parentNode.insertBefore(sectionEl, anchorEl);
+    } else {
+      anchorEl.parentNode.insertBefore(sectionEl, anchorEl.nextSibling);
+    }
+
+    // Add nav link
+    if (navLinks) {
+      const a = document.createElement('a');
+      a.href = '#' + secId;
+      a.textContent = section.title;
+      a.addEventListener('click', () => {
+        $('hamburger')?.classList.remove('active');
+        navLinks.classList.remove('open');
+      });
+      navLinks.appendChild(a);
+    }
   });
 }
 
@@ -1078,23 +1192,42 @@ function renderSocialLinks() {
   container.innerHTML = '';
 
   const links = [
-
     {
       url: data.site?.youtube,
       label: 'YouTube',
       svg: `
-        <svg
-          width="18"
-          height="18"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          aria-hidden="true"
-        >
-          <path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 5.545 16.297 5.545 12 5.545s-7.505 0-9.376.505A3.016 3.016 0 00.502 8.186C0 10.057 0 12 0 12s0 1.943.502 3.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.376-.505a3.015 3.015 0 002.122-2.136C24 13.943 24 12 24 12s0-1.943-.502-3.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+        </svg>
+      `
+    },
+    {
+      url: data.site?.facebook,
+      label: 'Facebook',
+      svg: `
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+        </svg>
+      `
+    },
+    {
+      url: data.site?.instagram,
+      label: 'Instagram',
+      svg: `
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+        </svg>
+      `
+    },
+    {
+      url: data.site?.x,
+      label: 'X (Twitter)',
+      svg: `
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
         </svg>
       `
     }
-
   ];
 
   links.forEach(link => {
@@ -1220,7 +1353,6 @@ function initHamburger() {
 
   if (!ham || !links) return;
 
-
   ham.addEventListener(
     'click',
     () => {
@@ -1235,7 +1367,6 @@ function initHamburger() {
 
     }
   );
-
 
   links
     .querySelectorAll('a')
@@ -1257,7 +1388,6 @@ function initHamburger() {
       );
 
     });
-
 
   document.addEventListener(
     'click',
